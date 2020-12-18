@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nacos-provider
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.7.211:8848
+        # 配置中心的后缀名(默认为properties)
+        file-extension: properties
+        # 配置中心的前缀(默认为应用名)
+        prefix: nacos-config-example
+
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+  # 表示开发环境 数据集(nacos-config-example-dev.properties) 可以不需要(nacos-config-example.properties)
+  profiles:
+    active: dev

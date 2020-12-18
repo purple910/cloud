@@ -1,4 +1,4 @@
-package com.example.consumer.controller;
+package com.example.nacosconsumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,7 +27,7 @@ public class OrderController {
 	private String queryUserName() {
 
 		try {
-			return restTemplate.getForObject("http://nacos-config-example/getUser", String.class);
+			return restTemplate.getForObject("http://nacos-provider/getUser", String.class);
 		} catch (Exception e) {
 			System.out.println("error");
 		}

@@ -1,4 +1,4 @@
-package com.example.provider.controller;
+package com.example.nocosprocider.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -24,6 +24,5 @@ public class UserController {
 	public String getUser() {
 		return username+name+id+age;
 	}
-
 
 }

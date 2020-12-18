@@ -1,13 +1,13 @@
-package com.example.provider;
+package com.example.nocosprocider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProviderApplication {
+public class NocosProciderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class, args);
+        SpringApplication.run(NocosProciderApplication.class, args);
     }
 
 }

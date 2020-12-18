@@ -1,4 +1,4 @@
-package com.example.consumer;
+package com.example.nacosconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,10 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ConsumerApplication {
+public class NacosConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerApplication.class, args);
+        SpringApplication.run(NacosConsumerApplication.class, args);
     }
 
     @LoadBalanced
