@@ -1,6 +1,6 @@
 spring:
   application:
-    name: stsc-gateway
+    name: nacos-gateway
 
   cloud:
     nacos:
@@ -12,4 +12,8 @@ zuul:
     auth:
       path: /auth/**
       serviceId: nacos-consumer
+    pay:
+      path: /pay/**
+      serviceId: nacos-provider
+
 
