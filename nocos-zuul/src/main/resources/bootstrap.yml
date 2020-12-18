@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: stsc-gateway
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+zuul:
+  routes:
+    auth:
+      path: /auth/**
+      serviceId: nacos-consumer
+
